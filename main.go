@@ -16,6 +16,10 @@ func main() {
 	// fmt.Println(playground.Sum([]int {10, 20, 30})) // should return 60
 
 	// ReverseString test
-	fmt.Println(playground.ReverseString("cat"))      // should return "tac"
-	fmt.Println(playground.ReverseString("alphabet")) // should return "tebahpla"
+	// fmt.Println(playground.ReverseString3("cat"))      // should return "tac"
+	// fmt.Println(playground.ReverseString3("alphabet")) // should return "tebahpla"
+
+	// FizzBuzz test
+	fmt.Println("sequence:")
+	playground.FizzBuzz(100)
 }
