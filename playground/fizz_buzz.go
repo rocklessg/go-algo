@@ -8,7 +8,6 @@ import "fmt"
 //   - If the number is divisible by 5, print "Buzz"
 //   - If the number is divisible by both 3 and 5, print "FizzBuzz"
 //   - Otherwise, print the number itself
-//   - If n is less than 1, return an empty string
 
 func FizzBuzz(n int) {
 	for value := 1; value < n; value++ {
