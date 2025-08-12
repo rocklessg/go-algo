@@ -20,6 +20,12 @@ func main() {
 	// fmt.Println(playground.ReverseString3("alphabet")) // should return "tebahpla"
 
 	// FizzBuzz test
-	fmt.Println("sequence:")
-	playground.FizzBuzz(100)
+	// fmt.Println("sequence:")
+	// playground.FizzBuzz(100)
+
+	// NumberToBase test
+	fmt.Println("Number to Base:")
+	fmt.Println(playground.NumberToBase(10, 2))  // should return "1010"
+	fmt.Println(playground.NumberToBase(255, 16)) // should return "FF"
+
 }
