@@ -27,5 +27,8 @@ func main() {
 	fmt.Println("Number to Base:")
 	fmt.Println(playground.NumberToBase(10, 2))  // should return "1010"
 	fmt.Println(playground.NumberToBase(255, 16)) // should return "FF"
+	fmt.Println(playground.NumberToBase(100, 8))  // should return "144"
+	fmt.Println(playground.NumberToBase(0, 10))   // should return "0"
+	fmt.Println(playground.NumberToBase(123, 36)) // should return "3F
 
 }
