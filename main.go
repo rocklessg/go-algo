@@ -31,4 +31,12 @@ func main() {
 	fmt.Println(playground.NumberToBase(0, 10))   // should return "0"
 	fmt.Println(playground.NumberToBase(123, 36)) // should return "3F
 
+	// New logic test
+	fmt.Println("New logic Number to Base:")
+	fmt.Println(playground.NumberToBaseNew(10, 2))  // should return "1010"
+	fmt.Println(playground.NumberToBaseNew(255, 16)) // should return "FF"
+	fmt.Println(playground.NumberToBaseNew(100, 8))  // should return "144"
+	fmt.Println(playground.NumberToBaseNew(0, 10))   // should return "0"
+	fmt.Println(playground.NumberToBaseNew(123, 36)) // should return "3F
+
 }

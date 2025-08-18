@@ -2,7 +2,7 @@ package playground
 
 import (
 	//"strconv"
-	"fmt"
+	//"fmt"
 	"strings"
 )
 
@@ -55,14 +55,16 @@ func NumberToBase(number int, base int) string {
 
 
 // Another logic
-func NumberToBaseNew(value string, base int) int {
-	res := 0
-	multiplier := 1
-	for i := len(value) - 1; i >= 0; i-- {
-		var val int
-		fmt.Scanf(string(value[i]), "%X", &val)
-		res += multiplier * val
-		multiplier *= base
+func NumberToBaseNew(number, base int) string {
+	const charset = "0123456789ABCDEF"
+	if number == 0 {
+		return "0"
 	}
-	return res
+
+	var res strings.Builder
+	for number > 0 {
+		res.WriteByte(charset[number%base])
+		number /= base
+	}
+	return ReverseString(res.String())
 }
